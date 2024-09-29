@@ -124,14 +124,14 @@ nav .brand {
 .hero-content .btn {
     padding: 10px 30px;
     border-radius: 50px;
-    background-color: #9e1606;
-    color: white;
+    background-color: #ce4434;
+    color: rgb(4, 1, 1);
     margin-top: 20px;
     transition: 0.3s;
 }
 
 .hero-content .btn:hover {
-    background-color: white;
+    background-color: rgb(151, 12, 12);
     color: #e74c3c;
     transition: 0.3s;
 }
@@ -171,7 +171,7 @@ nav .brand {
     width: 50%; /* 50% width for media (image and video) */
     display: flex; /* Use flexbox for media items */
     flex-direction: column; /* Column direction for stacking */
-    gap: 10px; /* Space between image and video */
+    gap: 50px; /* Space between image and video */
 }
 
 .media img,
@@ -179,15 +179,19 @@ nav .brand {
     width: 100%; /* Full width of the media container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Rounded corners */
+    border: 5px solid black;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
+
 #about p {
     width: 50%; /* 50% width for the paragraph */
-    font-size: 2.2rem; /* Font size for paragraph text */
+    font-size: 2.4rem; /* Font size for paragraph text */
     color: #555; /* Color for paragraph text */
     line-height: 1.6; /* Line height for readability */
-    margin-left: 20px; /* Space between media and paragraph */
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 40px; /* Space between media and paragraph */
 }
 
 
@@ -196,17 +200,30 @@ nav .brand {
     background-color: #f9f9f9;
     color: #333;
 }
+#education h2{
+    margin-top: -50px;
+margin-left:-1150px;;
+}
 
 .timeline li {
     margin-bottom: 1.5rem;
     border-left: 2px solid #e74c3c;
     padding-left: 20px;
 }
+.timeline{
+    margin-bottom: -30px;
+}
+
+
+
 
 /* Skills Section */
 #skills {
     background-color: #333;
     color: white;
+}
+#skills h2{
+    color: rgb(201, 185, 155);
 }
 
 .skill-card {
@@ -216,6 +233,9 @@ nav .brand {
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.skill-card h3,u{
+    color: rgb(2, 129, 129);
 }
 
 .skills-content {
@@ -227,26 +247,29 @@ nav .brand {
 #projects {
     background-color: #f0f0f0;
 }
-
-.project-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+#projects h2{
+    margin-left: -1100px;
+}
+#projects h3{
+    color: rgb(105, 7, 66);
+    
 }
 
 .project-card {
-    background-color: white;
+    background-color: rgb(153, 131, 131);
     padding: 2rem;
     margin: 1rem;
+    color: rgb(84, 2, 51);
+    margin-top: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 45%;
+    width: 100%;
 }
 
 /* Awards Section */
 #awards {
-    background-color: white;
+    background-color: #d3d3d3c4; /* Background color for the About section */
     color: #333;
 }
 
@@ -268,6 +291,10 @@ nav .brand {
 #contact {
     background-color: #333;
     color: white;
+}
+#contact h2{
+    color: rgb(216, 69, 69);
+    margin-left: -1100px;
 }
 
 .contact-list {
@@ -334,24 +361,4 @@ footer :hover{
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-    .skills-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-card, .skill-card {
-        width: 100%;
-    }
-
-    .right-menu {
-        flex-direction: column;
-    }
-}
 
