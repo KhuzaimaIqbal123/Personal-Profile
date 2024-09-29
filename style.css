@@ -363,8 +363,213 @@ footer :hover{
     color: rgb(251, 55, 55);
 
 }
+.hamburger{
+    display: none;
+}
+
+/* Your existing CSS here... */
+
+/* Add the responsive styles at the end of your CSS file */
+
+/* Responsive Styles */
+@media (max-width: 1000px) and (max-height:1400px) and (min-width:850px) {
+    nav {
+        flex-direction: column; /* Stack items in the navbar for tablets */
+        align-items: center; /* Center items */
+    }
+
+    .right-menu {
+        flex-direction: column; /* Stack the menu items */
+        width: 100%; /* Full width for right menu */
+        justify-content: center; /* Center items */
+    }
+    #education h2{ 
+        margin-left: 150px;
+    }
+    #projects h2{
+        margin-left: 100px;
+    }
+    #projects #projects-list{
+        margin-left: -23px;
+    }
+    #contact h2{
+        margin-left: 100px;
+    }
+    #about {
+    
+        flex-direction: row; /* Stack items vertically in About section */
+    }
+
+    .media {
+        width: 100%; /* Full width for media */
+    }
+
+    #about p {
+        width: 100%; /* Full width for paragraph */
+        font-size: 1.5rem; /* Adjust font size */
+    }
+}
 
 
+@media (max-width: 1380px) and (max-height:1000px) and (min-width:1000px) {
+    nav {
+        flex-direction: column; /* Stack items in the navbar for tablets */
+        align-items: center; /* Center items */
+    }
+
+    .right-menu {
+        flex-direction: column; /* Stack the menu items */
+        width: 100%; /* Full width for right menu */
+        justify-content: center; /* Center items */
+    }
+    #education h2{ 
+        margin-left: 150px;
+    }
+    #projects h2{
+        margin-left: 100px;
+    }
+    #projects #projects-list{
+        margin-left: -23px;
+    }
+    #contact h2{
+        margin-left: 100px;
+    }
+    #about {
+    
+        flex-direction: row; /* Stack items vertically in About section */
+    }
+
+    .media {
+        width: 100%; /* Full width for media */
+    }
+
+    #about p {
+        width: 100%; /* Full width for paragraph */
+        font-size: 1.5rem; /* Adjust font size */
+    }
+}
 
 
+@media (max-width: 850px) and (min-width: 640px) {
+    nav {
+        flex-direction: column; /* Stack items in the navbar for tablets */
+        align-items: center; /* Center items */
+    }
 
+    .right-menu {
+        flex-direction: column; /* Stack the menu items */
+        width: 100%; /* Full width for right menu */
+        justify-content: center; /* Center items */
+    }
+
+    #education h2{ 
+        margin-left: 150px;
+    }
+    #projects h2{
+        margin-left: 100px;
+    }
+    #projects #projects-list{
+        margin-left: -23px;
+    }
+    #contact h2{
+        margin-left: 100px;
+    }
+    #about .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #about #about-text{
+        width: 90%;
+        align-items:end;
+        font-size: 2.0em;
+    }
+
+    .media #profile-image,.media #profile-video{
+      width:200%;
+    }
+}
+
+
+@media (max-width: 640px) and (min-width: 420px) {
+    nav {
+        flex-direction: column; /* Stack items in the navbar for tablets */
+        align-items: center; /* Center items */
+    }
+
+    .right-menu {
+        /* flex-direction: column; Stack the menu items */
+        width: 100%; /* Full width for right menu */
+        display: none;
+        justify-content: center; /* Center items */
+    }
+
+    #education h2{ 
+        margin-left: 150px;
+    }
+    #projects h2{
+        margin-left: 100px;
+    }
+    #projects #projects-list{
+        margin-left: -23px;
+    }
+    #contact h2{
+        margin-left: 100px;
+    }
+    #about .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #about #about-text{
+        width: 90%;
+        align-items:end;
+        font-size: 2.0em;
+    }
+
+    .media #profile-image,.media #profile-video{
+      width:200%;
+    }
+}
+
+@media (max-width: 420px) and (min-width: 200px) {
+    nav {
+        flex-direction: column; /* Stack items in the navbar for tablets */
+        align-items: center; /* Center items */
+    }
+
+    .right-menu {
+        /* flex-direction: column; Stack the menu items */
+        width: 100%; /* Full width for right menu */
+        display: none;
+        justify-content: center; /* Center items */
+    }
+
+    #education h2{ 
+        margin-left: 70px;
+    }
+    #projects h2{
+        margin-left: 100px;
+    }
+    #projects #projects-list{
+        margin-left: -23px;
+    }
+    #contact h2{
+        margin-left: 100px;
+    }
+    .skills-content .skill-card{
+        gap: 200px;
+        margin-right: 20px;
+    }
+    #about .content{
+        display: flex;
+        flex-direction: column;
+    }
+    #about #about-text{
+        width: 90%;
+        align-items:end;
+        font-size: 2.0em;
+    }
+
+    .media #profile-image,.media #profile-video{
+      width:200%;
+    }
+}
