@@ -3,108 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
-
-    <!-- Navbar  -->
+    <!-- Navbar -->
     <nav>
-        <p>Portfolio</p>
-        <div class="right-menu">
-            <ul>About</ul>
-            <ul>Education</ul>
-            <ul>Skills</ul>
-            <ul>Projects</ul>
-            <ul>Awards & Certification</ul>
-            <div class="dropdown">
-                <ul>More</ul>
-                <div class="dropdown-content">
-                    <ul><li>Contact</li></ul>
-                    <ul><li>Social Media</li></ul>
-                </div>
-            </div>
+        <div class="container">
+            <p>My Portfolio</p>
+            <ul class="right-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)">More <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#social-media">Social Media</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </nav>
-    
 
-<!-- About -->
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h1>About Me</h1>
+        <p>Hi, I'm Muhammad Khuzaima, a passionate Computer Science student with a love for problem-solving and building innovative solutions. I enjoy learning new technologies and thrive in teamwork settings.</p>
+        <div class="media">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKPQ2BVtco6lJIhi8Oqv6cHpnt6uIZe2_ZGA&s" alt="Profile Image">
+            <video src="https://cdn.pixabay.com/video/2024/05/05/210707_tiny.mp4" controls></video>
+        </div>
+    </section>
 
-    <div class="About">
-          <h1>About</h1>
-          <p>Hi, I'm Muhammad Khuzaima, a passionate Computer Science student
-             with a love for problem-solving and building innovative 
-             solutions.<br>I enjoy learning new technologies and thrive in teamwork settings</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKPQ2BVtco6lJIhi8Oqv6cHpnt6uIZe2_ZGA&s" alt="">
-            <video src="https://cdn.pixabay.com/video/2024/05/05/210707_tiny.mp4" width="30%" controls></video>
-    </div>
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <h1>Education</h1>
+        <ul>
+            <li>Matriculation in Science from Divisional Public School & College (Faisalabad)</li>
+            <li>Intermediate in ICS from Punjab College (Faisalabad)</li>
+            <li>Bachelors in Computer Science from Information Technology University (Lahore)</li>
+        </ul>
+    </section>
 
-<!-- Education -->
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h1>Skills</h1>
+        <div class="skills-content">
+            <div class="skill">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Leadership</li>
+                    <li>Creativity</li>
+                    <li>Decision Making</li>
+                </ul>
+            </div>
+            <div class="skill">
+                <h3>Hard Skills</h3>
+                <ul>
+                    <li>C++ Programming</li>
+                    <li>Python Development</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL/MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<div>
-    <h1>Education</h1>
-    <ul>Matriculation in Science from Divisional Public School & College (Faisalabad) </ul>
-    <ul>Intermediate in ICS from Punjab College (Faisalabad)</ul>
-    <ul>Bachelors in Computer Science from Information Technology University (Lahore) </ul>
-       
-</div>
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h1>Projects</h1>
+        <ul>
+            <li>
+                <h3>Client-Server Application</h3>
+                <p>Developed a socket-based client-server application with file upload, download, and authentication functionalities.</p>
+            </li>
+            <li>
+                <h3>Chess Game</h3>
+                <p>Created a Chess game in C++ with the option to play against the computer or another person.</p>
+            </li>
+        </ul>
+    </section>
 
-<!-- Skills -->
- <div>
-    <h1>Skills</h1>
-    <li>Soft Skill
-        <ul>Teamwork</ul>
-        <ul>Problem Solving</ul>
-        <ul>Leadership</ul>
-        <ul>Creativity</ul>
-        <ul>Decision Making</ul>
-    </li>
-    <li>Hard Skills</li>
-        <ul>C++ Programming</ul>
-        <ul>Python Development</ul>
-        <ul>HTML/CSS</ul>
-        <ul>JavaScript</ul>
-        <ul>SQL/MySQL</ul>
- </div>
+    <!-- Awards Section -->
+    <section id="awards" class="section">
+        <h1>Awards</h1>
+        <ul>
+            <li>Codefest 5.0 Participation Certificate</li>
+            <li>IEEE Seminar Attendance Certificate</li>
+        </ul>
+    </section>
 
-<!-- Awards -->
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h1>Contact</h1>
+        <ul>
+            <li>Email: <a href="mailto:khuzaimaiqbal91@gmail.com">khuzaimaiqbal91@gmail.com</a></li>
+            <li>Phone: 0324-7142905</li>
+        </ul>
+    </section>
 
-    <h1>Awards</h1>
-    <ul>Codefest 5.0 participation certificate</ul>
-    <ul>IEEE seminar attendance certificate</ul>
-
- <!-- Projects-->
-
- <div>
-    <h1>Projects</h1>
-    <ul>
-        <h3>Client-Server Application</h3>
-            <p>Developed a socket-based client-server application with file upload, download, and 
-                authentication functionalities</p>
-    </ul>
-    <ul>
-        <h3>Chess Game</h3>
-            <p>
-                Created a Chess game in C++ with the option to play with computer as well as with another person
-            </p>
-        
-    </ul>
-  
- </div>
-
- <!-- Contact -->
-
- <h1>Contact</h1>
- <ul>Email: khuzaimaiqbal91@gmail.com</ul>
- <ul>Phone Number: 0324-7142905</ul>
-
- <!-- Social Media -->
-
- <h1>Social Media</h1>
- <a href="https://www.linkedin.com/in/muhammad-khuzaima-212511266/"><ul>Linkedin</ul></a>
- <a href="https://www.instagram.com/khuzaima.iqbal123/"><ul>Instagram</ul></a>
- <a href="https://github.com/KhuzaimaIqbal123"><ul>GitHub</ul></a>
- 
+    <!-- Social Media Section -->
+    <section id="social-media" class="section">
+        <h1>Social Media</h1>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/muhammad-khuzaima-212511266/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/khuzaima.iqbal123/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/KhuzaimaIqbal123" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
