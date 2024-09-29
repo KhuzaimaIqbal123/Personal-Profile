@@ -26,37 +26,73 @@ ul {
     list-style-type: none;
 }
 
-/* Navbar */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    padding: 1rem 0;
-    z-index: 1000;
+    background-color: #333; /* Background color of the navbar */
+    padding: 15px; /* Padding around the navbar */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    position: fixed;
 }
 
 nav .brand {
-    font-size: 1.8rem;
+    color: rgba(245, 101, 101, 0.707);
+    font-size: 1.9em;
     font-weight: 700;
-    margin-left: 20px;
+
 }
 
-nav .right-menu {
+
+.container {
     display: flex;
-    gap: 2rem;
-    margin-right: 20px;
 }
 
-nav a:hover {
-    color: #e74c3c;
-    transition: 0.3s ease;
+.right-menu {
+    list-style: none; /* Remove bullets from the list */
+    display: flex; /* Display items in a row */
+    margin-left: 330px;
 }
+
+.right-menu li {
+    position: relative; /* Position relative for the dropdown */
+}
+
+.right-menu a {
+    color: rgb(197, 197, 197); /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 15px; /* Padding for links */
+    display: block; /* Block display for easier hovering */
+}
+
+.right-menu a:hover {
+    color:rgba(182, 170, 170, 0.601);
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown content by default */
+    position: absolute; /* Position it relative to the dropdown */
+    background-color:#333; /* Background color of dropdown */
+    min-width: 130px; /* Minimum width */
+    z-index: 1; /* Layering */
+}
+
+.dropdown-content a {
+    color: rgb(197, 197, 197); /* Text color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Block display for dropdown links */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #575757; /* Change background of More on hover */
+}
+
+/* navbar */
+
 
 /* Hero Section */
 #hero {
@@ -65,17 +101,20 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    color: rgb(173, 112, 112);
+
 }
 
 .hero-content p {
     font-size: 1.2rem;
+    color: rgb(173, 112, 112);
+
 }
 
 .highlight {
@@ -85,7 +124,7 @@ nav a:hover {
 .hero-content .btn {
     padding: 10px 30px;
     border-radius: 50px;
-    background-color: #e74c3c;
+    background-color: #9e1606;
     color: white;
     margin-top: 20px;
     transition: 0.3s;
@@ -114,24 +153,43 @@ nav a:hover {
     margin: 0 auto;
 }
 
-/* About Section */
+/* About Section Styles */
 #about {
-    background-color: white;
-    color: #333;
+    background-color: #d3d3d3c4; /* Background color for the About section */
+    padding: 5rem 2rem; /* Padding for the section */
+    display: flex; /* Enable flexbox for layout */
+    align-items: flex-start; /* Align items at the start */
 }
 
-#about .media {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
+#about .content {
+    max-width: 100%; /* Maximum width for content */
+    display: flex; /* Enable flexbox for content layout */
+    flex-direction: row; /* Row direction for flex items */
 }
 
-#about img, #about video {
-    max-width: 45%;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+.media {
+    width: 50%; /* 50% width for media (image and video) */
+    display: flex; /* Use flexbox for media items */
+    flex-direction: column; /* Column direction for stacking */
+    gap: 10px; /* Space between image and video */
 }
+
+.media img,
+.media video {
+    width: 100%; /* Full width of the media container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+#about p {
+    width: 50%; /* 50% width for the paragraph */
+    font-size: 2.2rem; /* Font size for paragraph text */
+    color: #555; /* Color for paragraph text */
+    line-height: 1.6; /* Line height for readability */
+    margin-left: 20px; /* Space between media and paragraph */
+}
+
 
 /* Education Section */
 #education {
@@ -257,6 +315,24 @@ nav a:hover {
 .social-icons a:hover {
     color: #e74c3c;
 }
+footer {
+    background-color: #333; /* Background color of the footer */
+    color: white; /* Text color */
+    text-align: left; /* Center align text */
+    padding: 20px 50px 10px; /* Padding for the footer */
+    position: relative; /* Positioning */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content {
+    max-width: 100%; /* Max width for content */
+}
+footer :hover{
+    color: rgb(251, 55, 55);
+
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -278,3 +354,4 @@ nav a:hover {
         flex-direction: column;
     }
 }
+
