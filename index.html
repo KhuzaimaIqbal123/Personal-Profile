@@ -216,6 +216,16 @@
             link.innerHTML = `<i class="${media.icon}"></i>`;
             socialMediaLinks.appendChild(link);
         });
+        function changeLanguage() {
+    const selector = document.getElementById('language-selector');
+    const nameElement = document.getElementById('name');
+
+    if (selector.value === 'ur') {
+        nameElement.innerText = 'محمد خزیمہ'; // Replace with the name in Urdu
+    } else {
+        nameElement.innerText = 'Muhammad Khuzaima'; // Original name
+    }
+}
     </script>
 </body>
 </html>
