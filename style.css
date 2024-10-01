@@ -73,6 +73,12 @@ nav .brand {
 .right-menu a:hover {
     color:rgba(182, 170, 170, 0.601);
 }
+.hamburger{
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
 
 .dropdown-content {
     display: none; /* Hide dropdown content by default */
@@ -118,6 +124,9 @@ nav .brand {
     background-color: #575757; /* Change background of More on hover */
 }
 
+
+
+
 /* navbar */
 
 
@@ -135,15 +144,19 @@ nav .brand {
 
 
 .hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
+    font-size: 60px;
+    margin-bottom: 10px;
     color: rgb(173, 112, 112);
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
 .hero-content p {
-    font-size: 1.2rem;
+    font-size: 20px;
     color: rgb(173, 112, 112);
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -168,25 +181,26 @@ nav .brand {
 
 /* Section Styles */
 .section {
-    padding: 5rem 2rem;
+    padding: 80px 32px;
 }
 
 .section h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 40px;
+    margin-bottom: 32px;
+
     color: #333;
 }
 
 .section .content {
-    max-width: 900px;
+    max-width: 900p;
     margin: 0 auto;
 }
 
 /* About Section Styles */
 #about {
     background-color: #d3d3d3c4; /* Background color for the About section */
-    padding: 5rem 2rem; /* Padding for the section */
+    padding: 80px 32px;
     display: flex; /* Enable flexbox for layout */
     align-items: flex-start; /* Align items at the start */
 }
@@ -216,7 +230,7 @@ nav .brand {
 
 #about p {
     width: 50%; /* 50% width for the paragraph */
-    font-size: 2.4rem; /* Font size for paragraph text */
+    font-size: 30px;
     color: #555; /* Color for paragraph text */
     line-height: 1.6; /* Line height for readability */
     margin-top: 20px;
@@ -258,8 +272,8 @@ margin-left:-1150px;;
 
 .skill-card {
     background-color: #444;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    padding: 32px;
+    margin-bottom: 32px; /* Margin bottom in pixels */
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -287,8 +301,7 @@ margin-left:-1150px;;
 
 .project-card {
     background-color: rgb(153, 131, 131);
-    padding: 2rem;
-    margin: 1rem;
+    padding: 30px;
     color: rgb(84, 2, 51);
     margin-top: 40px;
     border-radius: 15px;
@@ -390,9 +403,6 @@ footer :hover{
     color: rgb(251, 55, 55);
 
 }
-.hamburger{
-    display: none;
-}
 
 /* Your existing CSS here... */
 
@@ -417,7 +427,17 @@ footer :hover{
         margin-left: 100px;
     }
     #projects #projects-list{
-        margin-left: -23px;
+        /* margin-left: -23px; */
+    }
+    .project-card {
+        background-color: rgb(153, 131, 131);
+        padding: 30px;
+        color: rgb(84, 2, 51);
+        margin-top: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
     }
     #contact h2{
         margin-left: 100px;
@@ -456,7 +476,17 @@ footer :hover{
         margin-left: 100px;
     }
     #projects #projects-list{
-        margin-left: -23px;
+        /* margin-left: -23px; */
+    }
+    .project-card {
+        background-color: rgb(153, 131, 131);
+        padding: 30px;
+        color: rgb(84, 2, 51);
+        margin-top: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
     }
     #contact h2{
         margin-left: 100px;
@@ -482,12 +512,12 @@ footer :hover{
         flex-direction: column; /* Stack items in the navbar for tablets */
         align-items: center; /* Center items */
     }
-
     .right-menu {
         flex-direction: column; /* Stack the menu items */
         width: 100%; /* Full width for right menu */
         justify-content: center; /* Center items */
     }
+   
 
     #education h2{ 
         margin-left: 150px;
@@ -496,7 +526,7 @@ footer :hover{
         margin-left: 100px;
     }
     #projects #projects-list{
-        margin-left: -23px;
+        /* margin-left: -23px; */
     }
     #contact h2{
         margin-left: 100px;
@@ -510,10 +540,22 @@ footer :hover{
         align-items:end;
         font-size: 2.0em;
     }
+    .project-card {
+        background-color: rgb(153, 131, 131);
+        padding: 30px;
+        color: rgb(84, 2, 51);
+        margin-top: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+    }
 
     .media #profile-image,.media #profile-video{
       width:200%;
     }
+  
+
 }
 
 
@@ -522,21 +564,64 @@ footer :hover{
         flex-direction: column; /* Stack items in the navbar for tablets */
         align-items: center; /* Center items */
     }
+    #about p{
+        
+        width: 50%; /* 50% width for the paragraph */
+        font-size: 20px;
+        color: #555; /* Color for paragraph text */
+        line-height: 1.6; /* Line height for readability */
+        margin-top: 20px;
+        padding-right: 10%;
+        /* padding-left: 10%; */
+        text-align: center;
+      
+    }
+    #hero .hero-content p{
+        padding-left: 20px;
+    }
 
     .right-menu {
-        /* flex-direction: column; Stack the menu items */
-        width: 100%; /* Full width for right menu */
         display: none;
-        justify-content: center; /* Center items */
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    right: 0;
+    top: 50px;
     }
-
+ 
     .hamburger{
-        display:flex;
-        color: wheat;
-        width: 100px;
-        font-size: 50px;
-        margin-left:150px;
+      display: block;
+      color: #ce4434;
+      
     }
+  .hamburger:hover + .right-menu,
+  .right-menu:hover {
+    display: flex;
+  }
+  #navcon{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .project-card {
+    background-color: rgb(153, 131, 131);
+    padding: 30px;
+    color: rgb(84, 2, 51);
+    margin-top: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+  .right-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #080606;
+  }
+
+  .right-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
     .brand .hamburger:hover{
         color:red        
     }
@@ -547,7 +632,7 @@ footer :hover{
         margin-left: 100px;
     }
     #projects #projects-list{
-        margin-left: -23px;
+        /* margin-left: -23px; */
     }
     #contact h2{
         margin-left: 100px;
@@ -559,26 +644,76 @@ footer :hover{
     #about #about-text{
         width: 90%;
         align-items:end;
-        font-size: 2.0em;
+        font-size: 25px;
     }
 
     .media #profile-image,.media #profile-video{
       width:200%;
     }
+    .skills-content .skill-card{
+        gap: 200px;
+        width: 40%;
+
+        /* margin-right: 20px; */
+    } 
+
+    /* Projects Section */
+
 }
 
 @media (max-width: 420px) and (min-width: 200px) {
+
+    #hero .hero-content p{
+        padding-left: 10px;
+    }
+
     nav {
         flex-direction: column; /* Stack items in the navbar for tablets */
         align-items: center; /* Center items */
     }
-
-    .right-menu {
-        /* flex-direction: column; Stack the menu items */
-        width: 100%; /* Full width for right menu */
+  .right-menu {
         display: none;
-        justify-content: center; /* Center items */
+    flex-direction: column;
+    position: absolute;
+    background-color: #333;
+    right: 0;
+    top: 50px;
     }
+
+    .hamburger{
+      display: block;
+      color: #ce4434;
+      
+    }
+    .project-card {
+        background-color: rgb(153, 131, 131);
+        padding: 30px;
+        color: rgb(84, 2, 51);
+        margin-top: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+    }
+  .hamburger:hover + .right-menu,
+  .right-menu:hover {
+    display: flex;
+  }
+  #navcon{
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .right-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #080606;
+  }
+
+  .right-menu a {
+    color: #fff;
+    text-decoration: none;
+  }
+
 
     #education h2{ 
         margin-left: 70px;
@@ -587,15 +722,31 @@ footer :hover{
         margin-left: 100px;
     }
     #projects #projects-list{
-        margin-left: -23px;
+        /* margin-left: -23px; */
     }
     #contact h2{
         margin-left: 100px;
     }
+    .skills-content{
+        margin-left: 10px;
+        margin-right: 10px;
+
+    }
     .skills-content .skill-card{
         gap: 200px;
-        margin-right: 20px;
-    }
+        width: 45%;
+        /* margin-right: 20px; */
+    } 
+    .skills-content .skill-card #soft-skills-list{
+   
+    font-size: 12px;
+
+    } 
+
+    .skills-content .skill-card #hard-skills-list{
+        font-size: 12px;
+    
+        } 
     #about .content{
         display: flex;
         flex-direction: column;
@@ -603,10 +754,24 @@ footer :hover{
     #about #about-text{
         width: 90%;
         align-items:end;
-        font-size: 2.0em;
+        font-size: 20px;
+    }
+    #about p{
+        
+        width: 50%; /* 50% width for the paragraph */
+        font-size: 20px;
+        color: #555; /* Color for paragraph text */
+        line-height: 1.6; /* Line height for readability */
+        margin-top: 20px;
+        padding-right: 10%;
+        text-align: center;
+      
     }
 
     .media #profile-image,.media #profile-video{
       width:200%;
     }
+    
 }
+
+
